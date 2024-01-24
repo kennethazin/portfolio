@@ -5,8 +5,8 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 function Bio() {
     return (
         <Box mt={10} overflow="none" width="100%">
-            <Heading mb={1} fontSize='1.5rem' borderBottom="5px solid #525252" display="inline-block">Bio</Heading>
-            <Text fontSize='1rem'>
+            <Heading mb={1} fontSize='1.17rem' borderBottom="5px solid #525252" display="inline-block">Bio</Heading>
+            <Text fontSize='0.9rem'>
                 <div className="date" style={{ display: "flex", flexDirection: "row" }}>
                     <div className="date-column">
                         <strong>2002</strong>
@@ -16,7 +16,7 @@ function Bio() {
                     </div>
                 </div>
             </Text>
-            <Text fontSize='1rem'>
+            <Text fontSize='0.9rem'>
                 <div className="date" style={{ display: "flex", flexDirection: "row" }}>
                     <div className="date-column">
                         <strong>2021</strong>
@@ -26,7 +26,7 @@ function Bio() {
                     </div>
                 </div>
             </Text>
-            <Text fontSize='1rem'>
+            <Text fontSize='0.9rem'>
                 <div className="date" style={{ display: "flex", flexDirection: "row" }}>
                     <div className="date-column">
                         <strong>2022 to present</strong>

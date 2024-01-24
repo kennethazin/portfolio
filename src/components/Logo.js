@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 export default function Logo(props) {
     return (
         <Box {...props}>
-            <Text fontSize="20px" fontWeight="bold" fontFamily="Monospace" color="#fffff">
-                Kenneth Ras
-            </Text>
+            <Heading fontSize="1.2rem" fontWeight="bold" color="#fffff" >
+                Kenneth John Ras
+            </Heading>
         </Box>
     );
-} 
+}

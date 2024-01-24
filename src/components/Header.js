@@ -1,13 +1,27 @@
 import React from "react";
 import { Link, Box, Flex, Text, Stack } from "@chakra-ui/react";
+import anime from 'animejs/lib/anime.es.js';
 
 import Logo from "./Logo";
 
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
-    const toggle = () => setIsOpen(!isOpen);
+    const toggle = () => {
+        setIsOpen(!isOpen);
 
+        // Add Anime.js animation
+        if (!isOpen) { // Only animate when opening the menu
+            anime({
+                targets: '.menuItem',
+                translateX: [-50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: anime.stagger(100) // Staggering effect
+            });
+        }
+    };
     return (
         <NavBarContainer {...props}>
             <Logo />
@@ -50,7 +64,7 @@ const MenuToggle = ({ toggle, isOpen }) => { // toggles when the menu icon appea
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
-        <Link href={to}>
+        <Link href={to} className="menuItem"> {/* Add a class name to the Link */}
             <Text display="flex" {...rest}>
                 {children}
             </Text>
@@ -84,13 +98,14 @@ const NavBarContainer = ({ children, ...props }) => {
         <Flex
             as="nav"
             align="center"
-            
             justify="space-between"
             wrap="wrap"
             mb={150}
-            p={2}
+
+            pt={2}
             bg={["primary.200", "primary.200", "transparent", "transparent"]}
             color={["white", "white", "primary.100", "primary.100"]}
+
             {...props}
         >
             {children}

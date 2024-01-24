@@ -5,8 +5,8 @@ const ProfilePicture = () => {
     return (
         <div
             style={{
-                width: '150px',
-                height: '150px',
+                width: '120px',
+                height: '120px',
                 borderRadius: '50%',
                 border: '2px solid white',
                 overflow: 'hidden',
@@ -19,10 +19,10 @@ const ProfilePicture = () => {
                 src={profilePicture}
                 alt="Profile Picture"
                 style={{
-                    width: '100%',
+                    width: '1000%',
                     height: '100%',
                     objectFit: 'cover',
-                    transform: 'scale(1.4)' // Adjust the scale value to control the zoom level
+                    transform: 'scale(1)' // Adjust the scale value to control the zoom level
                 }}
             />
         </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import spotify1 from "./images/spotify1.png";
 import spotify2 from "./images/spotify2.png";
-import { Card, CardHeader, CardBody, CardFooter, Stack , StackDivider} from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, Stack, StackDivider} from '@chakra-ui/react'
 
 
 const WorksPage = () => {

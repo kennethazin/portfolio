@@ -62,7 +62,7 @@ const MenuToggle = ({ toggle, isOpen }) => { // toggles when the menu icon appea
     );
 };
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const MenuItem = ({ children, isLast, to = "/portfolio/", ...rest }) => {
     return (
         <Link href={to} className="menuItem"> {/* Add a class name to the Link */}
             <Text display="flex" {...rest}>

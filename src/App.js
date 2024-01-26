@@ -26,7 +26,7 @@ export default function App() {
           <div style={{ width: '90%', margin: '0 auto', overflow: 'hidden' }}>
             <Routes>
               <Route exact path="/works" element={<WorksPage />} />
-              <Route exact path="/" element={<Container />} />
+              <Route exact path="/portfolio" element={<Container />} />
             </Routes>
           </div>
         </div>

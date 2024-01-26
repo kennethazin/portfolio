@@ -85,9 +85,9 @@ const MenuLinks = ({ isOpen }) => {
                 direction={["column", "row", "row", "row"]}
                 pt={[4, 4, 0, 0]}
             >
-                <MenuItem to="/works">Works</MenuItem>
-                <MenuItem to="/posts">Posts </MenuItem>
-                <MenuItem to="/source">Source </MenuItem>
+                <MenuItem to="/portfolio/works">Works</MenuItem>
+                <MenuItem to="/portfolio/posts">Posts </MenuItem>
+                <MenuItem to="/portfolio/source">Source </MenuItem>
             </Stack>
         </Box>
     );

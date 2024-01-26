@@ -25,7 +25,7 @@ export default function App() {
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ width: '90%', margin: '0 auto', overflow: 'hidden' }}>
             <Routes>
-              <Route exact path="/works" element={<WorksPage />} />
+              <Route exact path="/portfolio/works" element={<WorksPage />} />
               <Route exact path="/portfolio" element={<Container />} />
             </Routes>
           </div>

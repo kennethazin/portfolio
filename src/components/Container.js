@@ -56,7 +56,7 @@ function Container() {
           translateX: [-50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=400' // Staggered delay
       )
       .add(
         {
@@ -64,7 +64,7 @@ function Container() {
           translateY: [50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=600' // Staggered delay
       )
       .add(
         {
@@ -72,7 +72,7 @@ function Container() {
           translateX: [-50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=300' // Staggered delay
       )
       .add(
         {
@@ -80,7 +80,7 @@ function Container() {
           translateY: [50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=500' // Staggered delay
       )
       .add(
         {
@@ -88,7 +88,7 @@ function Container() {
           translateY: [50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=150' // Staggered delay
       )
       .add(
         {
@@ -96,7 +96,7 @@ function Container() {
           translateY: [50, 0],
           opacity: [0, 1],
         },
-        '-=200' // Staggered delay
+        '-=150' // Staggered delay
       )
       .add(
         {
@@ -157,17 +157,16 @@ function Container() {
           <Work />
         </Box>
 
-        <div className="button-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left', height: '10px' }}>
-          <Button bg="#4FD1C5" _hover={{ bg: "#2CAEA0" }} fontSize="0.9rem">
-            <span style={{ marginLeft: '5px' }}>
-              <a href='https://www.github.com/kennethazin' target="_blank" rel="noopener noreferrer">
+        <a href='https://www.github.com/kennethazin' target="_blank" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left'}}>
+          <div className="button-container">
+            <Button bg="#4FD1C5" _hover={{ bg: "#2CAEA0" }} fontSize="0.9rem">
+              <span>
                 My projects
-              </a>
-            </span>
-            <AiOutlineRight style={{ marginLeft: '10px' }} />
-          </Button>
-        </div>
-
+              </span>
+              <AiOutlineRight style={{ marginLeft: '10px' }} />
+            </Button>
+          </div>
+        </a>
         {/* Education picture container */}
         <Box className="education" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left',}}>
           <Education />

@@ -22,3 +22,31 @@
 .date strong {
   margin-right: 10px;
 }
+
+.project-heading {
+  padding: '200px';
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px; /* Add margin top */
+  text-align: center; /* Add text-align property */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.project-what-is-it {
+  color: white;
+  font-size: 1em;
+  margin-top: 20px; /* Add margin top */
+  text-align: center; /* Add text-align property */
+}
+
+.project-sub-heading {
+  padding: '200px';
+  color: white;
+  font-size: 1em;
+  margin-top: 20px; /* Add margin top */
+  text-align: left; /* Add text-align property */
+}
+  
+
+  

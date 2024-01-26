@@ -1,4 +1,4 @@
-import { Box, Heading, Flex, Button, Link, } from "@chakra-ui/react";
+import { Box, Heading, Flex, Button } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"; // react library for icons
 
 function Socials() {

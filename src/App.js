@@ -3,16 +3,21 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Container from "./components/Container";
 import WorksPage from "./components/WorksPage"; // Import the Works component
+import Footer from "./components/Footer"; // Import the Footer component
+import { Box } from "@chakra-ui/react";
 
 import "./styles.css";
 
 const headerStyle = {
-  position: 'sticky',
+  position: 'fixed',
   top: 0,
-  marginLeft: 20,
-  marginRight: 20,
+  left: 0,
+  right: 0,
+  paddingLeft: 20,
+  paddingRight: 20,
   zIndex: 20,
-  backdropFilter: 'blur(10px)'
+  backdropFilter: 'blur(10px)',
+  overflow: 'none', // Add this line to stop overscrolling
 };
 
 export default function App() {
@@ -30,6 +35,9 @@ export default function App() {
             </Routes>
           </div>
         </div>
+        <Box className="footer" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left', marginTop: '100px'}}>
+          <Footer />
+        </Box>
       </div>
     </Router>
   );

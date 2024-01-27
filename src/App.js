@@ -15,8 +15,8 @@ const headerStyle = {
   right: 0,
   paddingLeft: 20,
   paddingRight: 20,
-  zIndex: 20,
-  backdropFilter: 'blur(10px)',
+  zIndex: 15,
+  backdropFilter: 'blur(1vw)',
   overflow: 'none', // Add this line to stop overscrolling
 };
 
@@ -28,7 +28,7 @@ export default function App() {
           <Header />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ width: '90%', margin: '0 auto', overflow: 'hidden' }}>
+          <div style={{ width: '90%', margin: '100px auto', overflow: 'hidden' }}>
             <Routes>
               <Route exact path="/portfolio/works" element={<WorksPage />} />
               <Route exact path="/portfolio/" element={<Container />} />

@@ -3,6 +3,7 @@ import { Link, Box, Flex, Text, Stack } from "@chakra-ui/react";
 import anime from 'animejs/lib/anime.es.js';
 
 import Logo from "./Logo";
+import { NavLink } from "react-router-dom";
 
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -64,7 +65,7 @@ const MenuToggle = ({ toggle, isOpen }) => { // toggles when the menu icon appea
 
 const MenuItem = ({ children, isLast, to = "/portfolio/", ...rest }) => {
     return (
-        <Link href={to} className="menuItem"> {/* Add a class name to the Link */}
+        <Link as={NavLink} to={to} className="menuItem"> {/* Use ChakraUI Link component */}
             <Text display="flex" {...rest}>
                 {children}
             </Text>
@@ -86,8 +87,8 @@ const MenuLinks = ({ isOpen }) => {
                 pt={[4, 4, 0, 0]}
             >
                 <MenuItem to="/portfolio/works">Works</MenuItem>
-                <MenuItem to="/portfolio/posts">Posts </MenuItem>
-                <MenuItem to="/portfolio/source">Source </MenuItem>
+                <MenuItem to="/portfolio/posts">Posts</MenuItem>
+                <MenuItem to="/portfolio/source">Source</MenuItem>
             </Stack>
         </Box>
     );

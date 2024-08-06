@@ -5,7 +5,6 @@ import Container from './components/Container';
 import WorksPage from './components/WorksPage'; // Import the Works component
 import Footer from './components/Footer'; // Import the Footer component
 import { Box } from '@chakra-ui/react';
-
 import './styles.css';
 
 const headerStyle = {

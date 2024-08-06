@@ -211,8 +211,7 @@ function Container() {
         </Box>
 
         <a
-          href="https://www.github.com/kennethazin"
-          target="_blank"
+          href="works"
           style={{
             display: 'flex',
             justifyContent: 'center',

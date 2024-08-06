@@ -1,36 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { Box, Button } from "@chakra-ui/react";
-import Name from "./Name";
-import Education from "./Education";
-import Work from "./Work";
-import Bio from "./Bio";
-import Hobbies from "./Hobbies";
-import Socials from "./Socials";
-import Footer from "./Footer";
-import ProfilePicture from "./ProfilePicture";
-import Hello from "./Hello";
-import { AiOutlineRight } from "react-icons/ai";
+import React, { useState, useEffect } from 'react';
+import { Box, Button } from '@chakra-ui/react';
+import Name from './Name';
+import Education from './Education';
+import Work from './Work';
+import Bio from './Bio';
+import Hobbies from './Hobbies';
+import Socials from './Socials';
+import Footer from './Footer';
+import ProfilePicture from './ProfilePicture';
+import Hello from './Hello';
+import { AiOutlineRight } from 'react-icons/ai';
 import anime from 'animejs/lib/anime.es.js';
 
-
 function Container() {
-  const [containerWidth, setContainerWidth] = useState("600px");
+  const [containerWidth, setContainerWidth] = useState('600px');
 
   useEffect(() => {
     const handleResize = () => {
       // Update containerWidth based on window size
-      setContainerWidth(window.innerWidth <= 500 ? "100%" : "600px");
+      setContainerWidth(window.innerWidth <= 500 ? '100%' : '600px');
     };
 
     // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Initial call to set containerWidth based on initial window size
     handleResize();
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -130,59 +129,153 @@ function Container() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Box style={{ width: containerWidth }}>
         {/* Contents within the container */}
-        <Box className="hello" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box
+          className="hello"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Hello />
-        </Box>    
-        <Box className="name" style={{ display: 'flex', flexDirection: isSmallScreen ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'flex-start'}}>
-          <Box className="profile-picture" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        </Box>
+        <Box
+          className="name"
+          style={{
+            display: 'flex',
+            flexDirection: isSmallScreen ? 'column' : 'row',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+          }}
+        >
+          <Box
+            className="profile-picture"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
             <Name />
           </Box>
           {!isSmallScreen && (
-            <Box style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginBottom: "-150px", marginTop: '50px'}}>
-              <ProfilePicture/>
+            <Box
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+                marginBottom: '-150px',
+                marginTop: '50px',
+              }}
+            >
+              <ProfilePicture />
             </Box>
           )}
         </Box>
 
         {isSmallScreen && (
-          <Box className="profile-picture" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '-80px', marginTop: '60px'}}>
-            <ProfilePicture/>
+          <Box
+            className="profile-picture"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '-80px',
+              marginTop: '60px',
+            }}
+          >
+            <ProfilePicture />
           </Box>
         )}
 
-        <Box className="work" style={{ display: 'flex', justifyContent: 'left', alignItems: 'center', marginBottom: '20px', marginTop: '20px'}}>
+        <Box
+          className="work"
+          style={{
+            display: 'flex',
+            justifyContent: 'left',
+            alignItems: 'center',
+            marginBottom: '20px',
+            marginTop: '20px',
+          }}
+        >
           <Work />
         </Box>
 
-        <a href='https://www.github.com/kennethazin' target="_blank" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left'}}>
+        <a
+          href="https://www.github.com/kennethazin"
+          target="_blank"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+          }}
+        >
           <div className="button-container">
-            <Button bg="#4FD1C5" _hover={{ bg: "#2CAEA0" }} fontSize="0.9rem">
-              <span>
-                My projects
-              </span>
+            <Button bg="#4FD1C5" _hover={{ bg: '#2CAEA0' }} fontSize="0.9rem">
+              <span>My projects</span>
               <AiOutlineRight style={{ marginLeft: '10px' }} />
             </Button>
           </div>
         </a>
         {/* Education picture container */}
-        <Box className="education" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left',}}>
+        <Box
+          className="education"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+          }}
+        >
           <Education />
         </Box>
-        <Box className="bio" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left',}}>
+        <Box
+          className="bio"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+          }}
+        >
           <Bio />
         </Box>
-        <Box className="hobbies" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left',}}>
+        <Box
+          className="hobbies"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+          }}
+        >
           <Hobbies />
         </Box>
-        <Box className="socials" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left',}}>
+        <Box
+          className="socials"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+          }}
+        >
           <Socials />
         </Box>
-        <Box className="footer" style={{ display: 'flex', justifyContent: 'center', alignItems: 'left', marginTop: '100px'}}>
-          <Footer />
-        </Box>
+        <Box
+          className="footer"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'left',
+            marginTop: '100px',
+          }}
+        ></Box>
       </Box>
     </div>
   );

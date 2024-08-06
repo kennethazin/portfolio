@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* For small screens (max-width: 700px) */
 @media (max-width: 700px) {
   body {
@@ -47,6 +51,3 @@
   margin-top: 20px; /* Add margin top */
   text-align: left; /* Add text-align property */
 }
-  
-
-  

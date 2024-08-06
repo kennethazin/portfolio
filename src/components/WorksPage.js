@@ -1,84 +1,39 @@
-import React, { useState } from 'react';
-import { Box, Heading, Text } from '@chakra-ui/react';
-import spotify1 from './images/spotify1.png';
-import spotify2 from './images/spotify2.png';
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Stack,
-  StackDivider,
-} from '@chakra-ui/react';
+import React from 'react';
+import { Box, Center, Image, Stack, Text, Link } from '@chakra-ui/react';
+import CharapImage from './images/charap.png';
 
 const WorksPage = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Box overflow="none" width="800px" marginTop={5}>
-        <Heading
-          mb={10}
-          fontSize="1.17rem"
-          borderBottom="5px solid #525252"
-          display="inline-block"
-          marginTop="20px"
+    <div className="min-h-screen">
+      <Box className="mt-24">
+        <Link
+          href="https://charapexample-oya2c7lij-kennethjohnras-gmailcoms-projects.vercel.app/"
+          target="_blank"
         >
-          Projects
-        </Heading>
-        <Box>
-          <img
-            src={isHovered ? spotify2 : spotify1}
-            alt="Project 1"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            style={{ borderRadius: '15px' }}
-          />
+          <Center>
+            <Image
+              _hover={{ opacity: '90%' }}
+              src={CharapImage}
+              alt="Screenshot of Charap website"
+              borderRadius="5px"
+              width="400px"
+            />
+          </Center>
+        </Link>
 
-          <Box mt={10} overflow="none" width="100%">
-            <Card>
-              <CardHeader>
-                <Heading size="md">Python-Spotify API App</Heading>
-              </CardHeader>
-
-              <CardBody>
-                <Stack divider={<StackDivider />} spacing="4">
-                  <Box>
-                    <Heading size="xs" textTransform="uppercase">
-                      What is it?
-                    </Heading>
-                    <Text pt="2" fontSize="sm">
-                      Minimalist web app that utilises Python and Spotify API to
-                      retreive data of most listened songs from a specific
-                      artist.
-                    </Text>
-                  </Box>
-                  <Box>
-                    <Heading size="xs" textTransform="uppercase">
-                      How does it work?
-                    </Heading>
-                    <Text pt="2" fontSize="sm">
-                      TBF
-                    </Text>
-                  </Box>
-                  <Box>
-                    <Heading size="xs" textTransform="uppercase">
-                      Technologies Used:
-                    </Heading>
-                    <Text pt="2" fontSize="sm">
-                      Python, Bootstrap, Spotify API
-                    </Text>
-                  </Box>
-                </Stack>
-              </CardBody>
-            </Card>
+        <Center>
+          <Box maxWidth="400px" align="center">
+            <Stack spacing={3} align="center">
+              <Text className="mt-5 text-xl no-underline hover:no-underline">
+                Charap
+              </Text>
+              <Text className=" text-md ">
+                A modern bubble tea shop website. Built using Next.js, React,
+                and Shadcn.
+              </Text>
+            </Stack>
           </Box>
-        </Box>
+        </Center>
       </Box>
     </div>
   );

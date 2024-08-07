@@ -10,6 +10,7 @@ import ProfilePicture from './ProfilePicture';
 import Hello from './Hello';
 import { AiOutlineRight } from 'react-icons/ai';
 import anime from 'animejs/lib/anime.es.js';
+import { NavLink } from 'react-router-dom';
 
 function Container() {
   const [containerWidth, setContainerWidth] = useState('600px');
@@ -209,8 +210,8 @@ function Container() {
           <Work />
         </Box>
 
-        <a
-          href="/portfolio/works"
+        <NavLink
+          to="/portfolio/works"
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -223,7 +224,7 @@ function Container() {
               <AiOutlineRight style={{ marginLeft: '10px' }} />
             </Button>
           </div>
-        </a>
+        </NavLink>
         {/* Education picture container */}
         <Box
           className="education"

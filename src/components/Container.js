@@ -6,7 +6,6 @@ import Work from './Work';
 import Bio from './Bio';
 import Hobbies from './Hobbies';
 import Socials from './Socials';
-import Footer from './Footer';
 import ProfilePicture from './ProfilePicture';
 import Hello from './Hello';
 import { AiOutlineRight } from 'react-icons/ai';
@@ -211,7 +210,7 @@ function Container() {
         </Box>
 
         <a
-          href="works"
+          href="/portfolio/works"
           style={{
             display: 'flex',
             justifyContent: 'center',

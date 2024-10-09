@@ -45,11 +45,20 @@ function Bio() {
       <Text fontSize="0.9rem">
         <div className="date" style={{ display: 'flex', flexDirection: 'row' }}>
           <div className="date-column">
-            <strong>2024 to present</strong>
+            <strong>2024</strong>
           </div>
           <div className="text-column">
-            Working as a frontend software engineer at Viasat Dublin.
+            Worked as a frontend software engineer at Viasat Dublin.
           </div>
+        </div>
+      </Text>
+      <Text fontSize="0.9rem">
+        <div className="date" style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="date-column">
+            <strong>2024</strong>
+          </div>
+          <div className="text-column">
+            Founded <a href="https://www.witespacestudios.com/" className='underline'>Witespace Studios</a>, a digital creative design agency.          </div>
         </div>
       </Text>
     </Box>

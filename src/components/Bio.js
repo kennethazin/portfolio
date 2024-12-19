@@ -45,10 +45,10 @@ function Bio() {
       <Text fontSize="0.9rem">
         <div className="date" style={{ display: 'flex', flexDirection: 'row' }}>
           <div className="date-column">
-            <strong>2024</strong>
+            <strong>2024 - Sep</strong>
           </div>
           <div className="text-column">
-            Worked as a frontend software engineer at Viasat Dublin.
+            Intern as a frontend software engineer at Viasat Dublin.
           </div>
         </div>
       </Text>

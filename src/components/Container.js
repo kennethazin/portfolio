@@ -137,6 +137,8 @@ function Container() {
       }}
     >
       <Box style={{ width: containerWidth }}>
+      <div className='flex justify-center items-center mb-10'>
+      </div>
         {/* Contents within the container */}
         <Box
           className="hello"

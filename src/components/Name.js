@@ -7,7 +7,7 @@ function Name() {
         <Box mt={10}>
             <Heading mb={1} fontSize='2rem'>Kenneth John Ras</Heading>
             <Text fontSize='0.9rem'>
-                Digital Craftsman ( Artist / Developer / Designer )
+                Digital Craftsman ( Developer / Designer / Artist )
             </Text>
         </Box>
     );
